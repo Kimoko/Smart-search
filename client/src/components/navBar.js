@@ -6,10 +6,10 @@ const NavBar = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid" style={{marginLeft: 'auto', marginRight: 'auto', width:'80%'}}>
             <a class="navbar-brand" href="/">
 
-                <img src={logo} /* alt="Logo" */ width="100" height="40"/>
+                <img src={logo} alt="Logo" width="150" height="40"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,9 @@ const NavBar = () => {
                 <li class="nav-item">
         </li>
       </ul>
+    </div>
+    <div>
+        <button type="button" class="btn" style={{color:'white', backgroundColor:"#1400dc"}}>Вход/Регистрация</button>
     </div>
   </div>
 </nav>
