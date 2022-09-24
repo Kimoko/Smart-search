@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import React, {useContext, useEffect} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {Context} from "../index";
