@@ -3,7 +3,7 @@ import React from "react";
 const sales = () => {
   return (
     <div >
-      продавец
+      Тут типо графики
     </div>
   );
 };
