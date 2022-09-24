@@ -24,9 +24,9 @@ export default class ProdutsStore{
         makeAutoObservable(this)
     }
 
-    // setComposition(composition) {
-    //     this._composition= composition
-    // }
+    setComposition(composition) {
+        this._produts= composition
+    }
     get get_all_produts(){
         return this._produts
     }
