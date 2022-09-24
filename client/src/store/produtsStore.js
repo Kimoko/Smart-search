@@ -16,6 +16,9 @@ export default class ProdutsStore{
 
         ]
 
+
+        this._selectedType={}
+        this._selectedGenre={}
         this._selectedComposition={}
         makeAutoObservable(this)
     }
@@ -33,5 +36,26 @@ export default class ProdutsStore{
     // get selectedComposition(){
     //     return this._selectedComposition
     // }
+
+    setSelectedType(type){
+        this._selectedType = type
+    }
+    get selectedType(){
+        return {
+            "id":"1"
+        }
+        // return this._selectedType
+    }
+
+    setSelectedGenre(genre){
+        this._selectedGenre = genre
+    }
+    get selectedGenre(){
+
+        return {
+            "id":"1"
+        }
+        // return this._selectedGenre
+    }
 
 }
