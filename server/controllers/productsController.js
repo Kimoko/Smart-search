@@ -1,30 +1,17 @@
 
-<<<<<<< Updated upstream
-=======
+
 class ProductsController {
 
-    async getAll(req,res){
+    async getAll(req,res) {
 
-        let jsonData = require('../BIg_data/ReserveParsAll.json');
+        let jsonData = require('../Big_data/ReserveParsAll.json');
 
         // console.log(jsonData);
-
-        return res.json(jsonData)
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
-
-
-
-class ProductsController {
-
-    // async creat(req,res, next){}
+        // for (let [key, value] of Object.entries(jsonData)) {
+        //     return res.json(`${key}:${value}`);
+        // }
+        return res.json(jsonData);
+    }
 
 
 
