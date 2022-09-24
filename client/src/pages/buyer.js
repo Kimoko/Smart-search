@@ -1,9 +1,9 @@
 import React, {useContext, useEffect} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import CompositionList from "../components/CompositionList";
 import {Context} from "../index";
 import {observer} from "mobx-react-lite";
 import Cardtitle from "../components/cardtitle";
+import CompositionList from "../components/CompositionList";
 
 const buyer = observer(() => {
      const {produts} = useContext(Context)
@@ -19,17 +19,6 @@ const buyer = observer(() => {
     // },[composition.selectedType, composition.selectedGenre])
 
     return (
-     /*  <Container style = {{background: '#3C5B74', height: window.innerHeight - 54}}>
-        <Row className="mt-2" >
-          <Col md={3}>
-
-          </Col>
-          <Col md={9}>
-              <CompositionList/>
-          </Col>
-        </Row>
-      </Container> */
-
       <div style={{marginLeft: 'auto', marginRight: 'auto', width:'80%', marginTop:'5%'}}>
       <div style={{marginLeft: '25%'}}>
       <input type={'text'} style={{width:'60%',height:'35px'}} ></input>
@@ -52,7 +41,7 @@ const buyer = observer(() => {
               </div>
           </div>
               <div style={{marginLeft: 'auto', marginRight: '0', width:'80%'}}>
-                  <Cardtitle/>
+              <CompositionList/>
               </div>
           </div>
   </div>

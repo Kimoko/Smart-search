@@ -22,7 +22,7 @@ const NavBar = () => {
                 <a class="nav-link" href="/sales">Продавец</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Информация</a>
+                <a class="nav-link" href="/info">Информация</a>
                 </li>
                 <li class="nav-item">
         </li>

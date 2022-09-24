@@ -8,11 +8,11 @@ const CompositionList = observer(() => {
     const {produts} = useContext(Context)
 
     return (
-        <Row className="d-flex m-2">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
             {produts.get_all_produts.map(produts =>
                 <CompositionItem key={produts.id} produts={produts}/>
             )}
-        </Row>
+        </div>
     );
 });
 

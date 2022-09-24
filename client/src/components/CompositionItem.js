@@ -20,33 +20,20 @@ const CompositionItem = ({produts}) => {
     //     }
     // };
     return (
-        <Col md={3} className={"mt-3"} onClick={() => history.push(BUYER_ROUTE + '/' + produts.id)}>
-            <div>{produts.id}</div>
-        {/*//     <Card style={{width: 150, cursor: 'pointer', background: '#3C5B74',border:'#3C5B74', color: "white"}} >*/}
-        {/*//         <Image width={150} height={220} src={process.env.REACT_APP_API_URL + composition.img}/>*/}
-        {/*//         <div className="d-flex justify-content-between align-items-center">*/}
-        {/*//             <div>{composition.name}</div>*/}
-        {/*//             <div className="d-flex align-items-center">*/}
-        {/*//                 <div>*/}
-        {/*//                     {getRate(composition.rating) >= 7 ?*/}
-        {/*//                         <h6 style = {{color: 'green'}}> {getRate(composition.rating)}</h6>*/}
-        {/*//                         :*/}
-        {/*//                         <div>*/}
-        {/*//                             {getRate(composition.rating) >= 5 ?*/}
-        {/*//                                 <h6 style = {{color: 'gray'}}> {getRate(composition.rating)}</h6>*/}
-        {/*//                                 :*/}
-        {/*//                                 <h6 style = {{color: 'red'}}> {getRate(composition.rating)}</h6>*/}
-        {/*//                             }*/}
-        {/*//                         </div>*/}
-        {/*//                     }*/}
-        {/*//*/}
-        {/*//*/}
-        {/*//                 </div>*/}
-        {/*//             </div>*/}
-        {/*//         </div>*/}
-        {/*//         <div>{composition.year1.substr(0, 4)}</div>*/}
-        {/*//     </Card>*/}
-        </Col>
+            
+            <div class="col" onClick={() => history.push(BUYER_ROUTE + '/' + produts.id)}>
+                <div class="card" style={{width:'100%'}} >
+               <img src={produts.imageUrl} class="card-img-top" alt="Image"/>
+                <div class="card-body">
+                <div>{produts.id}</div>
+                    <h6 class="card-title">{produts.name}</h6>
+                    {produts.comp}
+                    <p class="card-text">{produts.price}</p> 
+                    <a href="#" class="btn btn-primary" style={{marginLeft: '20%'}}>Перейти к товару</a>            
+                </div>
+                </div>
+            </div>
+            
     );
 };
 
