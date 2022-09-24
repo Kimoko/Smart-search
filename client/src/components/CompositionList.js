@@ -8,7 +8,7 @@ const CompositionList = observer(() => {
     const {produts} = useContext(Context)
 
     return (
-        <Row className="d-flex" className="m-2">
+        <Row className="d-flex m-2">
             {produts.get_all_produts.map(produts =>
                 <CompositionItem key={produts.id} produts={produts}/>
             )}
